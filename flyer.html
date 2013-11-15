@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+		var ScreenWidth=screen.width;
+		var ScreenHeight=screen.height;
+		var ScreenResolution=ScreenWidth+"x"+ScreenHeight;
+		if(ScreenHeight > 768){
+			document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"largeScreen.css\" />	");
+		}else{
+			document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"temp.css\" />	");
+			}
+		document.write("<title>Home</title>");
+	</script>
+	
+	<title>Home</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navDiv">
+			<div class="navBar">
+				<div id="leftHalf">
+					<ul id="nav-List">
+						<li><a href="https://www.facebook.com/uclaisg">
+							<img id="facebookImg" src="FacebookButtonRevised.jpg" alt="ISG Flyer">
+						</a></li>
+					</ul>
+				</div>
+				<div id="rightHalf">
+					<ul id="user-List">
+						<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KJKHPMVSUE4G2">
+							<img id="facebookImg" src="paypalDonate.gif" alt="ISG Flyer">
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contentDiv">
+			<img id="flyerImg" src="isgFlyer.jpg" alt="ISG Flyer">
+		</div><!--contentDiv-->
+	</div><!--container-->
+	
+</body>
+
+</html>

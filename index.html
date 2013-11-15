@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../matinfouladi.css">
+	<title>Community Events</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="header-left"  class="left-section">
+				<img id="logo" src="../Images/isg_logo.gif"></img>
+			</div> <!-- END HEADER-LEFT -->
+			<div id="header-main"  class="main-section">
+				<img id="header-img" src="../Images/CultureShow2012Header.jpg"></img>
+			</div> <!-- END HEADER-MAIN -->
+			<div id="header-right" class="right-section">
+				<img id="header-right-img" src="../Images/UCLABruins.png" />
+			</div> <!-- END HEADER-RIGHT -->
+		</div> <!-- END HEADER -->
+		
+		<div id="content">
+			<div id="content-left"  class="left-section">
+				<div id="menu-top">
+					<img id="menu-top-img" src="../Images/menu-top.gif" />
+				</div>
+				<div id="menu">
+					<ul>
+						<a href="../"><li>Home</li></a>
+						<a href="../CommunityEvents"><li>Community Events</li></a>
+						<a href="../Gallery"><li>Gallery</li></a>
+						<a href="../Shop"><li>Shop</li></a>
+						<a href="../BoardMembers"><li>Board Members</li></a>
+					</ul>
+				</div> <!-- END MENU -->
+			</div> <!-- END CONTENT-LEFT -->
+			<div id="content-main"  class="main-section">
+			<script type="text/javascript">
+				function toggleMe(a){
+					var e=document.getElementById(a);
+					var i = document.getElementById(a + '_image');
+					if(!e)return true;
+					if(e.style.display=="none"){
+						e.style.display="block"
+						i.src = 'uparrow.gif';
+					} else {
+						e.style.display="none"
+						i.src = 'downarrow.gif';
+					}
+					return false;
+				}
+			</script>
+				<div class="post-event" >
+					<a style="cursor:pointer;" onclick="return toggleMe('post1')">
+						<h2 class="event-title">
+							This Is Where the Title of Our Next Event Will Be
+						</h2>
+						<h4 class="event-sub-title">
+							And this is where the subtitle would go.
+						</h4>
+						<h4 class="event-specs">
+							<b>When:</b> Some Time in the Future<br> 
+						</h4>
+						<h4 class="event-specs">
+							<b>Where:</b> Hopefully not too far<br>
+						</h4>
+						<h4 class="event-specs">
+							<b>Cost:</b> Free and Open to the Public... Hopefully<br> 
+						</h4>
+						<p style="text-align:center; margin-top:0; margin-bottom:0; color:blue;">Click for More Info</p>
+						<img id="post1_image" src="downarrow.gif" style="display: block; margin: 0 auto 0 auto;"/>
+					</a>
+					<div id="post1" style="display:none;">
+						<p class="event-info">
+							Extra Info Goes Here
+						</p>
+					</div>
+				</div> <!-- END POST-EVENT -->
+			</div> <!-- END CONTENT-MAIN -->
+			<div id="content-right" class="right-section">
+			</div> <!-- END CONTENT-RIGHT -->
+		</div>
+	
+	</div> <!-- END WRAPPER -->
+</body>
+
+</html>
